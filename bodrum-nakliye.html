@@ -227,6 +227,14 @@ h2{font-family:var(--fh);font-weight:700;font-size:clamp(1.7rem,2.8vw,2.4rem);
   display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0;}
 .ft h3{font-family:var(--fh);font-weight:700;font-size:.9rem;margin-bottom:3px;}
 .ft p{font-size:.81rem;color:var(--g500);line-height:1.55;}
+.bolge-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin:14px 0}
+.bolge-kart{background:var(--g50);border:1px solid var(--g100);border-radius:12px;padding:14px 16px;transition:border-color .15s}
+.bolge-kart:hover{border-color:var(--gr)}
+.bolge-kart h3{font-size:1rem;margin:0 0 6px}
+.bolge-kart h3 a{color:var(--bk)}
+.bolge-kart h3 a:hover{color:var(--gr)}
+.bolge-kart p{margin:0 0 6px;font-size:.9rem;color:var(--g500)}
+.bolge-kart .bm{font-weight:600;color:var(--gr);font-size:1.3rem}
 .mts{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 .mt{background:var(--g50);border:1px solid var(--g100);border-radius:14px;
   padding:24px 18px;text-align:center;transition:all .2s;}
@@ -476,6 +484,11 @@ footer{background:#111827;padding:52px 5% 26px;border-top:1px solid rgba(255,255
       "areaServed": {
         "@type": "AdministrativeArea",
         "name": "Bodrum",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 37.0344,
+          "longitude": 27.4305
+        },
         "containedIn": {
           "@type": "AdministrativeArea",
           "name": "Muğla"
@@ -487,6 +500,21 @@ footer{background:#111827;padding:52px 5% 26px;border-top:1px solid rgba(255,255
         "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
         "opens": "00:00",
         "closes": "23:59"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Bodrum Nakliye Hizmetleri",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bodrum Doblo ile Nakliye", "url": "https://motokurye.me/bodrum-doblo-nakliye.html"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bodrum Kamyonet ile Nakliye", "url": "https://motokurye.me/bodrum-kamyonet-nakliye.html"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bodrum Parça Eşya Taşıma", "url": "https://motokurye.me/bodrum-parca-esya-tasima.html"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bodrum Tekne ve Yat Malzemesi Taşıma", "url": "https://motokurye.me/bodrum-tekne-yat-malzeme-tasima.html"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bodrum Ofis ve İşyeri Taşıma", "url": "https://motokurye.me/bodrum-ofis-isyeri-tasima.html"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bodrum Yazlık Eşya Taşıma", "url": "https://motokurye.me/bodrum-yazlik-esya-tasima.html"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bodrum Esnaf ve E-Ticaret Mal Taşıma", "url": "https://motokurye.me/bodrum-esnaf-eticaret-mal-tasima.html"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bodrum Acil Nakliye", "url": "https://motokurye.me/bodrum-acil-nakliye.html"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bodrum Şehirlerarası Nakliye", "url": "https://motokurye.me/bodrum-sehirlerarasi-nakliye.html"}}
+        ]
       }
     },
     {
@@ -681,7 +709,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div><div class="ni-sub">
   <div class="drop-ilce-row"><a href="/uskudar-kurye-hizmeti.html">Üsküdar</a></div>
 </div><!-- bodrum-menu:start --><div class="ni-sub">
-  <div class="drop-ilce-row"><a href="/bodrum-moto-kurye.html">Bodrum</a></div>
+  <div class="drop-ilce-row"><a href="/bodrum-moto-kurye.html">Bodrum</a> <a href="/bodrum-nakliye.html" style="opacity:.85">Nakliye</a></div>
   <div class="drop-mah"><a href="/bodrum-merkez-moto-kurye.html">Merkez</a><a href="/bodrum-gumbet-moto-kurye.html">Gümbet</a><a href="/bodrum-bitez-moto-kurye.html">Bitez</a><a href="/bodrum-ortakent-moto-kurye.html">Ortakent</a><a href="/bodrum-yahsi-moto-kurye.html">Yahşi</a><a href="/bodrum-akyarlar-moto-kurye.html">Akyarlar</a><a href="/bodrum-turgutreis-moto-kurye.html">Turgutreis</a><a href="/bodrum-gumusluk-moto-kurye.html">Gümüşlük</a><a href="/bodrum-yalikavak-moto-kurye.html">Yalıkavak</a><a href="/bodrum-golkoy-moto-kurye.html">Gölköy</a><a href="/bodrum-turkbuku-moto-kurye.html">Türkbükü</a><a href="/bodrum-torba-moto-kurye.html">Torba</a><a href="/bodrum-guvercinlik-moto-kurye.html">Güvercinlik</a><a href="/bodrum-gundogan-moto-kurye.html">Gündoğan</a><a href="/bodrum-konacik-moto-kurye.html">Konacık</a><a href="/bodrum-ciftlik-moto-kurye.html">Çiftlik</a></div>
 </div><!-- bodrum-menu:end --></div></div></div>
     </div>
@@ -759,6 +787,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>İhtiyacınıza göre aşağıdaki özel hizmet sayfalarımızdan birine yönlenebilir veya doğrudan bizi arayıp WhatsApp üzerinden detayları paylaşabilirsiniz. Doblo, kamyonet, panelvan/minibüs ve kamyon araç seçeneklerimizle taşınacak eşyanın miktarına uygun aracı belirliyoruz.</p>
     <p>Hangi hizmet sayfamıza bakmanız gerektiğine karar vermek için şu basit ayrımı kullanabilirsiniz: taşınacak tek bir eşyanız varsa parça eşya taşıma, yazlığınızı sezon başında/sonunda açıp kapatacaksanız yazlık eşya taşıma, işyerinizi taşıyorsanız ofis/işyeri taşıma, tekneye malzeme göndermeniz gerekiyorsa tekne/yat malzemesi taşıma, düzenli ticari sevkiyatınız varsa esnaf/e-ticaret mal taşıma, aynı gün içinde taşınması gereken acil bir durumunuz varsa acil nakliye, Bodrum dışına veya Bodrum'a taşınıyorsanız şehirlerarası nakliye sayfalarımıza bakabilirsiniz. Hangi sayfaya bakacağınızdan emin değilseniz doğrudan bizi arayıp durumunuzu anlatmanız da yeterlidir; ihtiyacınıza göre doğru aracı (Doblo, kamyonet, panelvan/minibüs veya kamyon) ve ekibi biz planlarız. Bodrum'daki nakliye ve moto kurye hizmetlerimizi yerinde yönetiyoruz; bu sayede bölgenin kendine özgü ihtiyaçlarına (yazlık sezonu, marina çevresi teslimatları, dar sokaklar gibi) göre planlama yapabiliyoruz.</p>
 
+    <h2>Hizmetlerimiz</h2>
+    <div class="bolge-grid">
+      <div class="bolge-kart"><h3><span class="bm">🚐</span> <a href="/bodrum-doblo-nakliye.html">Doblo ile Nakliye</a></h3><p>Küçük ve orta hacimli eşyalar için Doblo ile hızlı nakliye hizmeti.</p></div>
+      <div class="bolge-kart"><h3><span class="bm">🚛</span> <a href="/bodrum-kamyonet-nakliye.html">Kamyonet ile Nakliye</a></h3><p>Ev eşyası, yazlık eşya ve ofis taşımaları için kamyonet ile nakliye.</p></div>
+      <div class="bolge-kart"><h3><span class="bm">📦</span> <a href="/bodrum-parca-esya-tasima.html">Parça Eşya Taşıma</a></h3><p>Koltuk, buzdolabı gibi tekli parça eşyaların güvenli taşınması.</p></div>
+      <div class="bolge-kart"><h3><span class="bm">⛵</span> <a href="/bodrum-tekne-yat-malzeme-tasima.html">Tekne/Yat Malzemesi Taşıma</a></h3><p>Marina ve koy çevresindeki teknelere malzeme ve parça taşıma.</p></div>
+      <div class="bolge-kart"><h3><span class="bm">🏢</span> <a href="/bodrum-ofis-isyeri-tasima.html">Ofis/İşyeri Taşıma</a></h3><p>Ofis ve işyeri taşımalarında donanım ve mobilyaların nakliyesi.</p></div>
+      <div class="bolge-kart"><h3><span class="bm">🏖️</span> <a href="/bodrum-yazlik-esya-tasima.html">Yazlık Eşya Taşıma</a></h3><p>Sezon açma ve kapama dönemlerinde yazlık eşyalarınızın taşınması.</p></div>
+      <div class="bolge-kart"><h3><span class="bm">🛍️</span> <a href="/bodrum-esnaf-eticaret-mal-tasima.html">Esnaf/E-Ticaret Mal Taşıma</a></h3><p>Esnaf arası mal transferi ve e-ticaret kaynaklı yük taşımaları.</p></div>
+      <div class="bolge-kart"><h3><span class="bm">⚡</span> <a href="/bodrum-acil-nakliye.html">Acil Nakliye</a></h3><p>Beklemeden, aynı gün içinde taşınması gereken eşyalar için.</p></div>
+      <div class="bolge-kart"><h3><span class="bm">🗺️</span> <a href="/bodrum-sehirlerarasi-nakliye.html">Şehirlerarası Nakliye</a></h3><p>Bodrum'dan Türkiye'deki tüm illere, illerden Bodrum'a eşya nakliyesi.</p></div>
+    </div>
+
     <h2>Ne Taşıyoruz</h2>
     <ul>
       <li>Ev eşyası (evden eve taşıma)</li>
@@ -821,11 +862,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>Durumunuzu telefon veya WhatsApp üzerinden anlatmanız yeterlidir; ihtiyacınıza en uygun hizmeti ve aracı biz birlikte belirleriz.</p>
       </details>
 
-    <h2>İlgili Hizmetler</h2>
-    <div style="line-height:2.4;"><a href="/bodrum-kamyonet-nakliye.html" style="color:var(--gr);font-size:.82rem;">Bodrum Kamyonet ile Nakliye</a> · <a href="/bodrum-parca-esya-tasima.html" style="color:var(--gr);font-size:.82rem;">Bodrum Parça Eşya Taşıma</a> · <a href="/bodrum-acil-nakliye.html" style="color:var(--gr);font-size:.82rem;">Bodrum Acil Nakliye</a> · <a href="/bodrum-sehirlerarasi-nakliye.html" style="color:var(--gr);font-size:.82rem;">Bodrum Şehirlerarası Nakliye</a></div>
+    <h2>Tüm Nakliye Hizmetlerimiz</h2>
+    <div style="line-height:2.4;"><a href="/bodrum-doblo-nakliye.html" style="color:var(--gr);font-size:.82rem;">Doblo ile Nakliye</a> · <a href="/bodrum-kamyonet-nakliye.html" style="color:var(--gr);font-size:.82rem;">Kamyonet ile Nakliye</a> · <a href="/bodrum-parca-esya-tasima.html" style="color:var(--gr);font-size:.82rem;">Parça Eşya Taşıma</a> · <a href="/bodrum-tekne-yat-malzeme-tasima.html" style="color:var(--gr);font-size:.82rem;">Tekne/Yat Malzemesi Taşıma</a> · <a href="/bodrum-ofis-isyeri-tasima.html" style="color:var(--gr);font-size:.82rem;">Ofis/İşyeri Taşıma</a> · <a href="/bodrum-yazlik-esya-tasima.html" style="color:var(--gr);font-size:.82rem;">Yazlık Eşya Taşıma</a> · <a href="/bodrum-esnaf-eticaret-mal-tasima.html" style="color:var(--gr);font-size:.82rem;">Esnaf/E-Ticaret Mal Taşıma</a> · <a href="/bodrum-acil-nakliye.html" style="color:var(--gr);font-size:.82rem;">Acil Nakliye</a> · <a href="/bodrum-sehirlerarasi-nakliye.html" style="color:var(--gr);font-size:.82rem;">Şehirlerarası Nakliye</a></div>
 
     <h2>Bodrum Bölge Moto Kurye Sayfalarımız</h2>
-    <div style="line-height:2.4;"><a href="/bodrum-merkez-moto-kurye.html" style="color:var(--gr);font-size:.82rem;">Bodrum Merkez Moto Kurye</a> · <a href="/bodrum-yalikavak-moto-kurye.html" style="color:var(--gr);font-size:.82rem;">Yalıkavak Moto Kurye</a> · <a href="/ucak-kargo-istanbul-bodrum.html" style="color:var(--gr);font-size:.82rem;">İstanbul'dan Bodrum'a Uçak Kargo</a> · <a href="/ucak-kargo-bodrum-istanbul.html" style="color:var(--gr);font-size:.82rem;">Bodrum'dan İstanbul'a Uçak Kargo</a></div>
+    <div style="line-height:2.4;"><a href="/bodrum-merkez-moto-kurye.html" style="color:var(--gr);font-size:.82rem;">Bodrum Merkez</a> · <a href="/bodrum-gumbet-moto-kurye.html" style="color:var(--gr);font-size:.82rem;">Gümbet</a> · <a href="/bodrum-bitez-moto-kurye.html" style="color:var(--gr);font-size:.82rem;">Bitez</a> · <a href="/bodrum-akyarlar-moto-kurye.html" style="color:var(--gr);font-size:.82rem;">Akyarlar</a> · <a href="/bodrum-ortakent-moto-kurye.html" style="color:var(--gr);font-size:.82rem;">Ortakent</a> · <a href="/bodrum-yahsi-moto-kurye.html" style="color:var(--gr);font-size:.82rem;">Yahşi</a> · <a href="/bodrum-turgutreis-moto-kurye.html" style="color:var(--gr);font-size:.82rem;">Turgutreis</a> · <a href="/bodrum-gumusluk-moto-kurye.html" style="color:var(--gr);font-size:.82rem;">Gümüşlük</a> · <a href="/bodrum-yalikavak-moto-kurye.html" style="color:var(--gr);font-size:.82rem;">Yalıkavak</a> · <a href="/bodrum-gundogan-moto-kurye.html" style="color:var(--gr);font-size:.82rem;">Gündoğan</a> · <a href="/bodrum-golkoy-moto-kurye.html" style="color:var(--gr);font-size:.82rem;">Gölköy</a> · <a href="/bodrum-turkbuku-moto-kurye.html" style="color:var(--gr);font-size:.82rem;">Türkbükü</a> · <a href="/bodrum-torba-moto-kurye.html" style="color:var(--gr);font-size:.82rem;">Torba</a> · <a href="/bodrum-guvercinlik-moto-kurye.html" style="color:var(--gr);font-size:.82rem;">Güvercinlik</a> · <a href="/bodrum-konacik-moto-kurye.html" style="color:var(--gr);font-size:.82rem;">Konacık</a> · <a href="/bodrum-ciftlik-moto-kurye.html" style="color:var(--gr);font-size:.82rem;">Çiftlik</a> · <a href="/ucak-kargo-istanbul-bodrum.html" style="color:var(--gr);font-size:.82rem;">İstanbul'dan Bodrum'a Uçak Kargo</a> · <a href="/ucak-kargo-bodrum-istanbul.html" style="color:var(--gr);font-size:.82rem;">Bodrum'dan İstanbul'a Uçak Kargo</a></div>
 
     <div style="background:var(--g50);border:1px solid var(--g100);border-radius:16px;padding:32px;margin-top:36px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;">
       <div>
